@@ -1,7 +1,7 @@
 function getWeather() {
   const location = document.getElementById('location').value;
   const apiKey = 'b98132b6bb364ca0bed160016252903';
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=yes`;
 
   fetch(apiUrl)
       .then(response => response.json())
